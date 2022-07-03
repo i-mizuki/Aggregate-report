@@ -26,13 +26,13 @@ for f in files:
             row[2].value is None:
             continue
         values = []
-        # 全セルを舐め回してデータを取得する
+        # 全セルを左から右に読み込んでデータを取得する
         for col in row:
             values.append(col.value)
         # 全セルデータを一つの配列に保存する
         all_data.append(values)
 
-# ここからall.xlsxを作る作業
+# 1-33行目で作成したブックを入れ込むため、新しいブックを作成する作業
 # print(all_data)
 wb = px.Workbook()
 ws = wb.worksheets[0]
