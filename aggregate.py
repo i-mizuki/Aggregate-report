@@ -1,15 +1,18 @@
+# 4つのライブラリインストール
 import os, sys, glob
 sys.path.append(os.path.join(os.path.dirname(__file__), 'site-packages'))
 import openpyxl as px
 
+# レポートファイルを作成
 NEW_FILE = "report.xlsx"
 
-# エクセルのファイルを全て取得する
+# 指定した場所のエクセルのファイルを全て取得する
 files = glob.glob("./*.xls*")
 
+# 空のエクセルブックを作成
 all_data = []
 for f in files:
-    # 開いているexcelがあったら無視。all.xlsxがあっても無視。
+    # 開いているexcelと前に作成したレポートがあっても取り込まない
     if f.startswith('./~')  or f == NEW_FILE:
         continue
     # excelを開く
@@ -18,7 +21,7 @@ for f in files:
     ws = wb.worksheets[0]
     # シートを読み込んで全行取得する
     for row in ws.iter_rows(min_row=2):
-        # 1列目と3列目が空白文字の時には取得しない、つまりループを終わらせる
+        # 1列目と3列目が空白文字の時には取得せず、次の行へ進む
         if row[0].value is None or \
             row[2].value is None:
             continue
