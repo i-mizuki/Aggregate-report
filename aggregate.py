@@ -26,7 +26,7 @@ for f in files:
             row[2].value is None:
             continue
         values = []
-        # 全セルを左から右に読み込んでデータを取得する
+        # 全セルを左から右に順番に読み込んでデータを取得する
         for col in row:
             values.append(col.value)
         # 全セルデータを一つの配列に保存する
@@ -34,11 +34,13 @@ for f in files:
 
 # 1-33行目で作成したブックを入れ込むため、新しいブックを作成する作業
 # print(all_data)
+# ブックとシートを作成
 wb = px.Workbook()
 ws = wb.worksheets[0]
+# どこから書き始めるか指定
 start_row = 1
 start_col = 1
-# 全セルデータを順番に書き込み
+# 全セルデータを左から右に順番に書き込み
 for y, row in enumerate(all_data):
     for x, cell in enumerate(row):
         ws.cell(row=start_row + y,
