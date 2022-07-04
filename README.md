@@ -74,3 +74,6 @@ https://prog-8.com/docs/git-env-win
 
 vscodeでgit/githubを使う
 https://xn--cmiya-system-works-5e4q.com/blog/detail/vscode-github/
+
+Matplotlib & Seabornの使い方
+https://kino-code.com/matplotlib_seaborn-04/
