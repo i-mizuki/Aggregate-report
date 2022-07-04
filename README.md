@@ -58,8 +58,6 @@ https://ai-inter1.com/python-module_package_library/
 - ls：今いるディレクトリの配下にあるディレクトリやファイルを表示
 - mkdir：ディレクトリを作成する
 - cd：ディレクトリを移動する
-使用コマンド一覧
-https://tech-blog.rakus.co.jp/entry/20210604/linux
 
 ## 参考にしたURL
 Pythonで手軽にExcel操作【OpenPyXL】
@@ -67,3 +65,12 @@ https://zenn.dev/cppm/articles/3dd1bbc8b8720a
 
 Pythonで複数のExcel・CSVを結合（マージ）する方法
 https://www.ex-it-blog.com/Python-Excel-csv-merge
+
+linuxコマンド頻出一覧
+https://tech-blog.rakus.co.jp/entry/20210604/linux
+
+gitの初期設定(windows)
+https://prog-8.com/docs/git-env-win
+
+vscodeでgit/githubを使う
+https://xn--cmiya-system-works-5e4q.com/blog/detail/vscode-github/
