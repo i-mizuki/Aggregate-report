@@ -45,6 +45,15 @@
 - japanize_matplotlib：matplotlibを日本語化するライブラリ
 - seaborn：グラフを高機能にしたり、色を綺麗なものにするライブラリ
 
+使用方法
+1. ローカルへライブラリをインストール
+pip install インストールしたいライブラリ
+2. ソースコード内でモジュールをインポート
+import openpyxl as pxみたいな
+
+ライブラリーやモジュールについてはこちら
+https://ai-inter1.com/python-module_package_library/
+
 ## その他
 - ls：今いるディレクトリの配下にあるディレクトリやファイルを表示
 - mkdir：ディレクトリを作成する
